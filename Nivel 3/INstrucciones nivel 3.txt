@@ -1,0 +1,104 @@
+NIVEL 3 — LA COLECCIÓN VIVA
+
+Fragmento: C-003 — Verde
+Tipo de nivel: Activación / evasión
+Bloques rompibles: No
+
+OBJETIVO
+
+Coraje debe activar las 3 terminales de contención distribuidas por el mapa.
+
+Terminal A — 🟢 Círculo
+Terminal B — 🟠 Triángulo
+Terminal C — 🔵 Cuadrado
+
+Cuando las tres terminales estén activadas, se desactiva la prisión central y queda disponible el Fragmento C-003.
+
+Coraje debe recoger C-003 para activar la salida hacia el Nivel 4.
+
+SECUENCIA
+
+Inicio → Activar A/B/C → Liberar C-003 → Recoger C-003 → Activar salida → Nivel 4
+
+El orden de activación de las terminales es libre.
+
+TERMINALES
+
+Cada terminal tiene únicamente dos estados:
+
+DESACTIVADA: conserva su símbolo y color normal.
+
+ACTIVADA: aumenta su iluminación y muestra ✓ en pantalla.
+
+Una terminal activada permanece activada durante el resto del nivel.
+
+ENEMIGOS
+
+Espécimen Fugado: patrulla el escenario.
+
+Guardián de Contención: protege las zonas de las terminales.
+
+Los enemigos NO pueden eliminarse.
+
+LADRIDO — BOTÓN A
+
+El ladrido reemplaza completamente la antigua mecánica de bombas.
+
+Coraje ladra únicamente hacia la dirección que está mirando.
+
+El ladrido:
+
+Viaja hacia adelante.
+Se detiene con obstáculos sólidos.
+Aturde temporalmente a los enemigos.
+Nunca elimina enemigos.
+
+Después del aturdimiento, el enemigo recupera su comportamiento normal.
+
+INTERACTUAR — BOTÓN B
+
+Se utiliza para:
+
+Activar terminales y realizar interacciones necesarias con elementos del escenario.
+
+POWER-UPS
+
+🌶️ Chile de Muriel: aumenta el alcance del ladrido y la duración del aturdimiento.
+
+👢 Bota de Muriel: aumenta la velocidad de desplazamiento.
+
+🧿 Amuleto de Muriel: protege a Coraje de un ataque.
+
+FRAGMENTO C-003
+
+Está ubicado en el centro del escenario y permanece encerrado al comenzar.
+
+0/3 → Bloqueado
+1/3 → Bloqueado
+2/3 → Bloqueado
+3/3 → LIBERADO
+
+Una vez liberado, Coraje puede recogerlo.
+
+SALIDA
+
+La salida al Nivel 4 comienza cerrada/inactiva.
+
+No basta con activar las terminales.
+
+Solo se activa cuando Coraje recoge C-003.
+
+C-003 recogido → Portal activo → Nivel 4
+
+CONTROLES
+
+Pad direccional: mover a Coraje.
+A: ladrar.
+B: interactuar.
+Pausa: pausar el juego.
+
+REGLAS IMPORTANTES PARA DESARROLLO
+
+No agregar bombas. No agregar bloques rompibles. Coraje no corre como mecánica independiente. El ladrido no causa daño ni elimina enemigos. Las terminales mantienen sus identidades A verde/círculo, B naranja/triángulo y C azul/cuadrado. C-003 siempre es verde.
+
+Con esto, el Nivel 3 queda documentado y cerrado.
