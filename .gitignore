@@ -1,0 +1,24 @@
+# Hojas de sprites sin recortar y láminas de referencia. Lo que usa el juego
+# son los atlas ya recortados; las hojas originales las guarda el director
+# creativo. Si alguna hace falta, se renombra con un nombre descriptivo.
+preview*.png
+*-atlas-clean.png
+epi-8bit-spritesheet.png
+enemy-axolotl-*.png
+enemy-virus-orb.png
+
+# Subidas sin clasificar (nombres de UUID)
+[0-9a-f]*-[0-9a-f]*-[0-9a-f]*-[0-9a-f]*-[0-9a-f]*.png
+
+# Notas de integración del proyecto del que salió este juego
+INTEGRACION.md
+
+# Sistema y editores
+__pycache__/
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
