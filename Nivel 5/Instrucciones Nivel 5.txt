@@ -1,0 +1,67 @@
+NIVEL 5 — COLAPSO DEL ARCHIVO
+
+Fragmento: C-005 — Rojo
+Tipo de nivel: Escape contrarreloj
+Enemigos: No
+
+OBJETIVO
+
+Coraje debe recoger el Fragmento C-005 y escapar del Archivo antes de que el escenario colapse completamente.
+
+INICIO
+
+El escenario comienza tranquilo y estable.
+
+C-005 está visible y disponible.
+La salida está cerrada.
+No hay enemigos.
+El colapso todavía no ha comenzado.
+ACTIVACIÓN DEL NIVEL
+
+Cuando Coraje recoge C-005:
+
+C-005 recogido → Alarma → Salida activa → Comienza colapso
+
+COLAPSO
+
+Después de recoger el fragmento:
+
+Comienza el contador.
+Aparecen bloques de corrupción progresivamente.
+Los bloques cierran caminos del mapa.
+Los bloques no pueden destruirse.
+El espacio disponible disminuye constantemente.
+La secuencia de aparición será predefinida, no aleatoria.
+Siempre debe existir una ruta posible si el jugador avanza a tiempo.
+VICTORIA
+
+Coraje debe alcanzar la salida antes de quedar atrapado.
+
+C-005 → Colapso → Escape → Salida → FINAL DEL JUEGO
+
+Después se continúa automáticamente con el final de la historieta.
+
+DERROTA
+
+Si los bloques cierran todas las rutas:
+
+CORaje atrapado → Reiniciar Nivel 5
+
+POWER-UPS
+
+🌶️ Chile de Muriel: no aparece en este nivel.
+👢 Bota de Muriel: aumenta velocidad y ayuda durante la huida.
+🧿 Amuleto de Muriel: no es necesario al no existir enemigos.
+
+CONTROLES
+
+Pad: mover a Coraje.
+A — Ladrar: disponible, aunque no es necesario para completar el nivel.
+B — Interactuar: recoger C-005 / interactuar.
+Pausa: pausar.
+
+REGLAS IMPORTANTES
+
+No hay enemigos. No hay terminales. No hay sellos. No hay combate. Los bloques de corrupción aparecen únicamente después de recoger C-005 y nunca pueden destruirse. El Fragmento C-005 siempre es rojo.
+
+La amenaza del Nivel 5 es exclusivamente el colapso del escenario.
