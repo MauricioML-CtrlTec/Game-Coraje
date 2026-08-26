@@ -1,0 +1,349 @@
+NIVEL 1 - LA GRANJA CORRUPTA
+
+Estado: especificacion cerrada para implementacion del Nivel 1.
+Alcance: solo Nivel 1. No modificar aplicacion principal ni niveles 2-5.
+
+REGLA GLOBAL DE PRESENTACION
+
+El marco de juego, HUD base, controles tactiles, botones, pausa, reinicio y contenedor visual se mantienen iguales para todos los niveles.
+
+Lo que cambia por nivel es:
+- Escenario jugable.
+- Objetivo.
+- Distribucion del mapa.
+- Enemigos o peligros.
+- Fragmento correspondiente.
+- Estados de salida.
+- Assets especificos del nivel.
+
+El escenario del Nivel 1 debe ser independiente del marco/HUD. No debe traer incrustados a Coraje, enemigos, fragmentos, power-ups, salida ni paneles de interfaz.
+
+CONCEPTO DEL NIVEL
+
+Nivel 1 es la introduccion/tutorial de EL ARCHIVO.
+
+Verbo principal: BUSCAR.
+Fragmento: C-001.
+Color oficial: morado.
+Dificultad: baja.
+Duracion objetivo: 3 a 5 minutos.
+
+Funcion del nivel:
+- Enseñar movimiento.
+- Enseñar exploracion.
+- Enseñar ladrido.
+- Enseñar que el ladrido aturde, no mata.
+- Presentar power-ups.
+- Enseñar interaccion con B.
+- Presentar fragmentos.
+- Enseñar salida activada por fragmento.
+
+No debe sentirse como tutorial textual. El mapa debe provocar que el jugador aprenda jugando.
+
+CONTEXTO NARRATIVO
+
+Coraje acaba de ser capturado por el Coleccionista y aparece dentro de una version corrupta de Ningun Lugar.
+
+Berenice logra comunicarse desde una terminal del Archivo, pero su ayuda debe aparecer como mensajes breves y contextuales, no como instrucciones largas.
+
+Objetivo narrativo:
+Coraje debe encontrar el Fragmento C-001, recogerlo y escapar por la salida antes de que el Archivo vuelva a cerrarse.
+
+ESCENARIO
+
+Una version oscura de la granja:
+- Tierra seca.
+- Cercas.
+- Granero al fondo.
+- Molino.
+- Luna morada.
+- Glitches violetas del Archivo.
+- Pacas de heno corruptas.
+- Bloques solidos de piedra/madera vieja.
+
+El estilo debe respetar:
+- Pixel art 16-bit.
+- Misma perspectiva del mapa.
+- Misma escala de Coraje.
+- Misma identidad visual aprobada.
+- Tonos de granja nocturna con corrupcion morada.
+
+MAPA PROPUESTO
+
+Tamano base: 15 columnas x 13 filas.
+
+Leyenda:
+# = bloque solido
+. = camino libre
+s = paca de heno corrupta rompible con ladrido
+S = inicio de Coraje
+H = Chile de Muriel
+B = Bota de Muriel
+A = Amuleto de Muriel
+E = Espantapajaros Corrupto
+C = Fragmento C-001
+X = salida cerrada/inactiva
+
+###############
+#S..H.........#
+#.#.#.#.#.#.#.#
+#..s..C..s....#
+#.#.#.#.#.#.#.#
+#..s.E...s....#
+#.#.#.#.#.#.#.#
+#..B.s...A....#
+#.#.#.#.#.#.#.#
+#....s...s..X.#
+#.#.#.#.#.#.#.#
+#.............#
+###############
+
+RECORRIDO DISEÑADO
+
+1. Inicio seguro
+Coraje aparece en la esquina superior izquierda. Las primeras casillas estan libres para que el jugador pruebe el pad sin presion.
+
+2. Primer descubrimiento
+El camino muestra una paca de heno corrupta bloqueando una ruta secundaria. El jugador aprende que el ladrido puede abrir ciertas pacas.
+
+3. Primer power-up
+El Chile de Muriel aparece temprano. Sirve para enseñar que el ladrido puede mejorar.
+
+4. Primer peligro
+El Espantapajaros Corrupto patrulla una zona media. No debe aparecer encima del jugador ni atacarlo de inmediato.
+
+5. Uso real del ladrido
+El jugador debe aturdir al Espantapajaros o esperar su patrulla para cruzar. El enemigo no muere.
+
+6. Recompensa de exploracion
+La Bota y el Amuleto quedan en rutas secundarias faciles de encontrar. No son obligatorios para terminar, pero enseñan el sistema de power-ups.
+
+7. C-001
+El fragmento aparece visible dentro de una ruta corta. Se recoge con B, no automaticamente.
+
+8. Salida activada
+Al recoger C-001, la salida X se enciende con energia morada y queda disponible.
+
+9. Escape
+Coraje debe llegar a la salida e interactuar o pisarla segun se defina en implementacion. Recomendado: si la salida esta activa, pisarla completa el nivel; B puede mostrar confirmacion/feedback.
+
+CONTROLES
+
+Pad direccional:
+- Mueve a Coraje por casillas.
+- Cuatro direcciones.
+- Sin salto.
+- Sin diagonal.
+
+Boton A - Ladrido:
+- Coraje ladra hacia la direccion que esta mirando.
+- Alcance base: 2 casillas.
+- El ladrido se detiene con bloques solidos.
+- Puede romper pacas de heno corruptas.
+- Puede aturdir enemigos.
+- No elimina enemigos en Nivel 1.
+- Cooldown recomendado: corto, aprox. 0.6 segundos.
+
+Boton B - Interactuar:
+- Recoger C-001 al estar frente al fragmento o encima de el.
+- Activar feedback contextual.
+- No debe usarse para atacar.
+
+POWER-UPS OFICIALES DEL NIVEL
+
+Solo existen estos 3 power-ups:
+
+Chile de Muriel:
+- Aumenta el alcance del ladrido de 2 a 3 casillas.
+- Aumenta el aturdimiento del enemigo.
+
+Bota de Muriel:
+- Aumenta ligeramente la velocidad de desplazamiento.
+- No debe hacer que el control tactil se sienta impreciso.
+
+Amuleto de Muriel:
+- Protege de 1 ataque.
+- Al recibir un golpe, se consume.
+
+No existe power-up de bomba.
+No existe bomba extra.
+No existe colocacion de bombas.
+
+PELIGROS Y ENEMIGOS
+
+Espantapajaros Corrupto:
+- Enemigo principal del Nivel 1.
+- Patrulla una zona media del mapa.
+- Detecta a Coraje a corta distancia.
+- Lo persigue brevemente si entra en rango.
+- Si recibe ladrido, queda aturdido unos segundos.
+- No muere.
+- No suelta puntos.
+- No es condicion de victoria.
+
+Gallina:
+- Personaje ambiental opcional.
+- Puede pasear cerca de la zona del Espantapajaros.
+- Puede asustarse y huir con el ladrido.
+- No debe causar daño.
+- No debe bloquear el avance principal.
+
+FRAGMENTO C-001
+
+Color: morado.
+Forma: misma forma oficial de todos los fragmentos del Archivo.
+No rediseñar la silueta.
+
+Comportamiento:
+- Visible antes de recogerlo.
+- Brilla con energia morada.
+- Al acercarse, aparece indicador contextual de B.
+- Al presionar B, se recoge.
+- Al recogerse, activa la salida.
+- Debe disparar un feedback claro: sonido, brillo, pequena vibracion visual del escenario.
+
+SALIDA
+
+Estados:
+1. Cerrada/inactiva.
+2. Activandose.
+3. Activa.
+
+Antes de C-001:
+- La salida puede verse, pero debe estar apagada o bloqueada.
+
+Despues de C-001:
+- La salida se ilumina en morado.
+- El HUD debe marcar C-001 recuperado.
+- Berenice puede mostrar una linea breve: "La salida reacciono. Corre, Coraje."
+
+CONDICION DE VICTORIA
+
+Explorar -> encontrar C-001 -> recoger con B -> activar salida -> llegar a salida.
+
+No se requiere eliminar enemigos.
+No se requiere limpiar el mapa.
+No se requiere puntuacion.
+
+DERROTA Y REINICIO
+
+Daño:
+- Si Coraje tiene Amuleto, el golpe consume el Amuleto.
+- Si no tiene Amuleto, pierde una vida o intento.
+
+Reinicio recomendado:
+- Al recibir daño normal, Coraje vuelve al ultimo punto seguro o al inicio del nivel.
+- Si se queda sin vidas/intentos, pantalla breve: "El Archivo retuvo a Coraje".
+- Boton: Reintentar.
+
+No reiniciar toda la historieta.
+No borrar progreso fuera del Nivel 1.
+
+HUD Y FEEDBACK
+
+El marco/HUD debe ser comun para todos los niveles.
+
+HUD recomendado para Nivel 1:
+- Archivo: C-001.
+- Fragmento: pendiente / recuperado.
+- Vidas o intentos.
+- Power-ups activos: Chile, Bota, Amuleto.
+- Tiempo solo si se decide usarlo como presion suave.
+
+Eliminar del HUD del Nivel 1:
+- Puntos como objetivo central.
+- Ranking.
+- Bomba.
+- Explosion.
+- "Enemigos fuera de combate".
+
+Feedback contextual:
+- A aparece reforzado cuando hay una paca o enemigo frente a Coraje.
+- B aparece cerca de C-001 y salida si corresponde.
+- Mensajes de Berenice deben ser cortos, maximo una linea.
+
+AUDIO Y ANIMACIONES
+
+Audio minimo:
+- Ambiente nocturno de granja corrupta.
+- Interferencia baja del Archivo.
+- Ladrido de Coraje.
+- Paca rompiendose.
+- Power-up recogido.
+- C-001 recogido.
+- Salida activada.
+- Golpe/daño.
+- Derrota.
+- Victoria/transicion.
+
+Animaciones minimas:
+- Coraje idle en 4 direcciones.
+- Coraje caminando en 4 direcciones.
+- Coraje ladrando en 4 direcciones.
+- Onda de ladrido.
+- Paca rompiendose.
+- Espantapajaros patrullando.
+- Espantapajaros aturdido.
+- C-001 flotando/brillando.
+- Salida cerrada/activa.
+
+ASSETS EXISTENTES APROVECHABLES
+
+Quedan como base:
+- marcador.png como referencia visual del marco y tono, pero no como escenario modular final.
+- bloque-paja.png como base de paca rompible.
+- espantapajaros-atlas.png como base del enemigo principal.
+- gallina.png como personaje ambiental.
+- fragmento.png como hoja fuente del C-001 morado y sus efectos de aparicion/recogida.
+- nuevo set de moviemientos.png como referencia de Coraje, movimiento y ladrido.
+- power up - chile de muriel.png.
+- Power Up - Bota de Muriel.png.
+- Power Up - Amuleto de Muriel.png.
+- Salida de niveles.png como hoja fuente de portal inactivo y portal activo.
+
+ASSETS QUE FALTAN PARA IMPLEMENTACION LIMPIA
+
+Globales o comunes:
+- Marco/HUD comun sin escenario incrustado.
+- Botones tactiles A/B y pad como piezas finales, si no se extraen del marco actual.
+- Efecto independiente de ladrido.
+- Efecto independiente de aturdimiento.
+- Efecto independiente de recoger fragmento.
+
+Nivel 1:
+- Escenario limpio de La Granja Corrupta sin HUD, sin Coraje, sin enemigos, sin fragmento, sin salida y sin power-ups.
+- Bloque solido de granja.
+- Paca de heno corrupta en estado normal.
+- Paca de heno corrupta rompiendose.
+- C-001 morado recortado como sprite independiente listo para motor, extraido de fragmento.png.
+- C-001 recogido / brillo / particulas como sprites independientes, extraidos de fragmento.png.
+- Salida cerrada recortada como sprite independiente, extraida de Salida de niveles.png.
+- Salida activandose como sprite o secuencia intermedia independiente.
+- Salida activa recortada como sprite independiente, extraida de Salida de niveles.png.
+- Espantapajaros aturdido, si no se puede extraer limpiamente del atlas.
+- Gallina en sprites separados, si se usara como ambientacion dentro del mapa.
+
+REGLAS DE NO USAR
+
+No agregar bombas.
+No agregar bomba extra.
+No agregar explosiones como mecanica.
+No hacer que el ladrido mate enemigos.
+No obligar a eliminar enemigos.
+No convertir el Nivel 1 en reto dificil.
+No incrustar assets interactivos dentro del escenario.
+No rediseñar la forma del fragmento.
+No cambiar el color oficial de C-001: siempre morado.
+
+ESTADO FINAL ESPERADO
+
+Al terminar Nivel 1, el jugador debe entender:
+- Como moverse.
+- Para que sirve A.
+- Para que sirve B.
+- Que los power-ups modifican a Coraje.
+- Que los fragmentos activan progreso.
+- Que la salida depende del fragmento.
+- Que los enemigos se evitan o aturden, no se matan.
+
+El nivel termina con C-001 recuperado y una transicion narrativa hacia la siguiente parte de la historieta.
