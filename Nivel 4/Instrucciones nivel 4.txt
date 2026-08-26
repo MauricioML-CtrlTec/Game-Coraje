@@ -1,0 +1,74 @@
+NIVEL 4 — LA CACERÍA
+
+Fragmento: C-004 — Amarillo
+Tipo de nivel: Persecución / combate con ladrido
+Bloques rompibles: No
+
+OBJETIVO
+
+El Portador tiene el Fragmento C-004.
+
+Coraje debe perseguirlo y acertarle 5 ladridos para derrotarlo y recuperar el fragmento.
+
+SECUENCIA
+
+Inicio → Perseguir al Portador → 5 ladridos → Portador derrotado → C-004 cae → Recoger C-004 → Salida activa → Nivel 5
+
+EL PORTADOR
+Comienza el nivel llevando C-004.
+Se desplaza constantemente por el mapa intentando escapar de Coraje.
+Requiere 5 impactos de ladrido.
+Cada impacto debe mostrar claramente que recibió daño.
+Al recibir el quinto ladrido, queda derrotado y suelta C-004.
+
+Indicador: 5 → 4 → 3 → 2 → 1 → 0
+
+SECUACES
+
+Habrá enemigos adicionales patrullando el escenario.
+
+Los secuaces no se eliminan. El ladrido solamente los aturde temporalmente, permitiendo que Coraje continúe la persecución.
+
+LADRIDO — BOTÓN A
+Se dispara hacia donde mira Coraje.
+Sirve para atacar al Portador.
+Aturde temporalmente a los secuaces.
+🌶️ Chile de Muriel: aumenta alcance y duración del aturdimiento.
+INTERACTUAR — BOTÓN B
+
+Se utiliza para recoger/interactuar con elementos cuando sea necesario.
+
+POWER-UPS
+
+🌶️ Chile de Muriel: mejora el ladrido.
+👢 Bota de Muriel: aumenta velocidad.
+🧿 Amuleto de Muriel: protege de un golpe.
+
+FRAGMENTO C-004
+
+🟡 Amarillo
+
+Permanece en posesión del Portador hasta derrotarlo.
+
+Portador 0/5 → C-004 liberado
+
+Coraje debe recogerlo para completar el objetivo.
+
+SALIDA
+
+Comienza inactiva.
+
+C-004 recogido → Portal activo → Nivel 5
+
+CONTROLES
+
+Pad: movimiento
+A: ladrar
+B: interactuar
+Pausa: pausar
+
+REGLAS IMPORTANTES
+
+No hay terminales, sellos ni bloques rompibles. El Portador es el único enemigo que puede ser derrotado. Los secuaces solamente pueden ser aturdidos. C-004 siempre es amarillo.
+
+Nivel 4 → Nivel 5 continúa directamente, sin regresar todavía a la historieta.
