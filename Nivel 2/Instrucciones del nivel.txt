@@ -1,0 +1,25 @@
+NIVEL 2 — EL ARCHIVO DE CRIATURAS
+
+Contexto: después de superar la primera prueba, el Coleccionista manda a Coraje más profundo dentro de su colección.
+
+Objetivo principal: encontrar el Fragmento C-002 y activar la salida.
+
+Cambio respecto al Nivel 1: aquí introducimos la primera mecánica nueva:
+
+🔒 El fragmento C-002 está protegido.
+
+Para liberarlo, Coraje debe destruir 3 sellos del Coleccionista repartidos por el mapa.
+
+Escenario: laboratorio/archivo oscuro del Coleccionista, con vitrinas, frascos, jaulas, tuberías y energía violeta. Mantendremos exactamente la misma perspectiva del Nivel 1.
+
+Enemigos: 2 tipos. Uno básico que patrulla y otro que persigue a Coraje al acercarse.
+
+Bloques rompibles: ya no serán pacas de paja. Usaremos cajas de archivo / contenedores de especímenes.
+
+Power-ups: mantenemos los cuatro que ya diseñamos: 🌶️ chile, 💣 bomba extra, 👢 bota y 🧿 amuleto.
+
+Flujo: destruir 3 sellos → aparece/se libera C-002 → recoger C-002 → portal se enciende → salir.
+
+Así el Nivel 2 ya aumenta dificultad sin alejarnos de la base tipo Bomberman.
+
+Primero diseñaría el escenario/mapa vacío del Nivel 2.
