@@ -1,0 +1,8 @@
+{
+  "name": "Game-Coraje: El Archivo",
+  "description": "Juego retro 16-bit de Coraje el Perro Cobarde con 5 capítulos completos: La Granja Corrupta, El Archivo Central, La Colección Viva, La Cacería del Portador y el Colapso del Archivo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
